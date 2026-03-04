@@ -55,7 +55,7 @@ if not os.path.exists(model_path) or not os.path.exists(scaler_path):
 app = FastAPI(title="Emotion-Aware Coursera-Style Learning Backend")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000","http://127.0.0.1:3000"], allow_credentials=True,
+    allow_origins=["https://emolearn-1.onrender.com", "http://localhost:3000"], allow_credentials=True,
     allow_methods=["*"], allow_headers=["*"]
 )
 
